@@ -6,4 +6,5 @@ urlpatterns = [
     path('todos/<int:pk>', views.TodoRetrieveUpdateDestroy.as_view()),
     path('todos/<int:pk>/complete', views.TodoToggleComplete.as_view()),
     path('sighnup/', views.sighnup),
+    path('login/', views.login),
 ]
