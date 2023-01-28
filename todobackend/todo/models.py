@@ -7,7 +7,7 @@ class Todo(models.Model):
 
     #set to current time
     created = models.DateTimeField(auto_now_add = True)
-    completed = models.TextField(blank = True)
+    completed = models.BooleanField(default = False)
 
     #user who posted this
     user = models.ForeignKey(User, on_delete = models. CASCADE)
