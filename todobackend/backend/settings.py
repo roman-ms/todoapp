@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'todo',
     'rest_framework',
     'api',
-    'rest_framework.authtoken'
+    'rest_framework.authtoken',
+    'corsheaders',
 ]
 
 
@@ -58,6 +59,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware', # CORSE middleware
+]
+
+CORS_ORIGIN_WHITELIST = [ 
+    'http://localhost:3000',
 ]
 
 ROOT_URLCONF = 'backend.urls'
