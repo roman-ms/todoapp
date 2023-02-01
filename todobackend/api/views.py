@@ -45,7 +45,7 @@ class TodoToggleComplete(generics.UpdateAPIView):
         serializer.save()
 
 @csrf_exempt
-def sighnup(request):
+def signup(request):
     if request.method == 'POST':
         try:
             data = JSONParser().parse(request) # data is a dictionary
