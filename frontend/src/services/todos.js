@@ -27,11 +27,11 @@ class TodoDataService{
     }
 
     login(data){
-        return axios.post('https://mshkvroman.pythonanywhere.com/api/todos/', data);
+        return axios.post('https://mshkvroman.pythonanywhere.com/api/login/', data);
     }
 
     signup(data){
-        return axios.post('https://mshkvroman.pythonanywhere.com/api/todos/', data);
+        return axios.post('https://mshkvroman.pythonanywhere.com/api/signup/', data);
     } 
 }
     
