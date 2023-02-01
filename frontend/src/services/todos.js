@@ -8,7 +8,7 @@ class TodoDataService{
     
     createTodo(data, token){ 
         axios.defaults.headers.common["Authorization"] = "Token " + token; 
-        return axios.post("'https://mshkvroman.pythonanywhere.com/api/todos/'", data);
+        return axios.post('https://mshkvroman.pythonanywhere.com/api/todos/', data);
     }
 
     updateTodo(id, data, token){ 
@@ -23,7 +23,7 @@ class TodoDataService{
 
     completeTodo(id, token){ 
         axios.defaults.headers.common["Authorization"] = "Token " + token;
-        return axios.put(`'https://mshkvroman.pythonanywhere.com/api/todos/'${id}/complete`); 
+        return axios.put(`https://mshkvroman.pythonanywhere.com/api/todos/${id}/complete`); 
     }
 
     login(data){
